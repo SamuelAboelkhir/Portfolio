@@ -11,7 +11,7 @@ function Card({ title, description, image }: Project) {
         {title}
       </Title>
       <Image
-        src={`/src/assets/images/${image}`}
+        src={`${image}`}
         alt={title}
         // className="flex w-full max-lg:w-full max-md:w-[25%] max-sm:w-[30%] mt-8 mb-8 top-0 left-0 right-0 bottom-0 m-auto"
       />
