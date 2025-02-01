@@ -84,7 +84,7 @@ export function LandingPage() {
       <AppShell.Main>
         <Stack className="flex w-full">
           <Image
-            src="/src/assets/images/Photograph.JPG"
+            src="/public/images/Photograph.JPG"
             radius="md"
             h="200"
             fit="contain"
