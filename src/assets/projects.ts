@@ -15,6 +15,6 @@ export const projects = {
     title: "BookStore",
     description: "A fullstack project featuring a frontend portion created using the mantine component library for react, typsecript, and tailwindcss. The backend portion is created using express.js and node.js.",
     image: "/images/BookStore.png",
-    link: "https://github.com/BlackDovah/ReactCalculator"
+    link: "https://github.com/BlackDovah/BookStore"
   }
 }
