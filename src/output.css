@@ -610,6 +610,10 @@ video {
   width: 100%;
 }
 
+.items-center {
+  align-items: center;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -650,10 +654,6 @@ video {
 @media not all and (min-width: 1024px) {
   .max-lg\:w-\[20\%\] {
     width: 20%;
-  }
-
-  .max-lg\:w-full {
-    width: 100%;
   }
 
   .max-lg\:text-2xl {

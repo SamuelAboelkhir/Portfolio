@@ -82,24 +82,24 @@ export function LandingPage() {
         </Group>
       </AppShell.Header>
       <AppShell.Main>
-        <Stack className="flex w-full">
+        <Stack className="flex w-full items-center justify-center">
           <Image
             src="/images/Photograph.JPG"
             radius="md"
             h="200"
             fit="contain"
-            className="flex w-[15%] max-lg:w-[20%] max-md:w-[25%] max-sm:w-[30%] mt-8 mb-8 top-0 left-0 right-0 bottom-0 m-auto"
+            className="flex w-[15%] max-lg:w-[20%] max-md:w-[25%] max-sm:w-[30%] mt-8 mb-8"
           />
-          <Title className="text-[#0035ad] text-4xl max-lg:text-3xl max-md:text-2xl mt-8 mb-2 top-0 left-0 right-0 bottom-0 m-auto">
+          <Title className="text-[#0035ad] text-4xl max-lg:text-3xl max-md:text-2xl mt-8 mb-2">
             Description:
           </Title>
-          <Text className="text-[#0035ad] top-0 left-0 right-0 bottom-0 m-auto w-1/2 text-lg max-lg:text-base max-md:text-sm">
+          <Text className="text-[#0035ad] w-1/2 text-lg max-lg:text-base max-md:text-sm">
             I'm a self taught programmer, who has started by delving into python
             and R to learn Data Sciences and Bioinformatics, but have ever since
             shifted towards FullStack development using tools like React and
             TailwindCSS, although I still love Bioinformatics
           </Text>
-          <Title className="text-[#0035ad] text-4xl max-lg:text-3xl max-md:text-2xl mt-8 mb-2 top-0 left-0 right-0 bottom-0 m-auto">
+          <Title className="text-[#0035ad] text-4xl max-lg:text-3xl max-md:text-2xl mt-8 mb-2">
             Projects
           </Title>
           <ProjectsDisplay/>
