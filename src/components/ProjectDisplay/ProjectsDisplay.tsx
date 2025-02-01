@@ -4,17 +4,15 @@ import { useMediaQuery } from "@mantine/hooks";
 import { Project } from "@/types";
 import { projects } from "@/assets/projects";
 
-function Card({ title, description, image }: Project) {
+function Card({ title, link, description, image }: Project) {
   return (
     <Stack>
       <Title className="text-[#0035ad] text-4xl max-lg:text-3xl max-md:text-2xl mt-8 mb-2 top-0 left-0 right-0 bottom-0 m-auto">
         {title}
       </Title>
-      <Image
-        src={`${image}`}
-        alt={title}
-        // className="flex w-full max-lg:w-full max-md:w-[25%] max-sm:w-[30%] mt-8 mb-8 top-0 left-0 right-0 bottom-0 m-auto"
-      />
+      <a href={link} target="_blank" rel="noopener noreferrer">
+        <Image src={`${image}`} alt={title} />
+      </a>
       <Text className="text-[#0035ad] top-0 left-0 right-0 bottom-0 mb-20 w-1/2 text-lg max-lg:text-base max-md:text-sm">
         {description}
       </Text>
