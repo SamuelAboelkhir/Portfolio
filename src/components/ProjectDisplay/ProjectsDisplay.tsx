@@ -40,6 +40,7 @@ export function ProjectsDisplay() {
       slidesToScroll={mobile ? 1 : 2}
       withIndicators
       loop
+      controlSize={40}
     >
       {slides}
     </Carousel>
