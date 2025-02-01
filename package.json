@@ -1,9 +1,12 @@
 {
   "name": "mantine-vite-template",
   "private": true,
+  "homepage": "https://blackdovah.github.io/Portfolio/",
   "type": "module",
   "version": "0.0.0",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d dist",
     "dev": "vite",
     "dev-both": "concurrently \"pnpm run tail\" \"pnpm run dev\"",
     "build": "tsc && vite build",
@@ -33,6 +36,7 @@
     "@tabler/icons-react": "^3.24.0",
     "axios": "^1.7.9",
     "embla-carousel-react": "^7.1.0",
+    "gh-pages": "^6.3.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^7.0.1"
