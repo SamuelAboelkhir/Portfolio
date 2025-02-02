@@ -1,6 +1,5 @@
 import { Carousel } from "@mantine/carousel";
-import { Text, Title, useMantineTheme, Image, Stack } from "@mantine/core";
-import { useMediaQuery } from "@mantine/hooks";
+import { Text, Title, Image, Stack } from "@mantine/core";
 import { Project } from "@/types";
 import { projects } from "@/assets/projects";
 import { bioProjects } from "@/assets/bioProjects";
@@ -12,7 +11,14 @@ function Card({ title, link, githubLink, description, image }: Project) {
         {title}
       </Title>
       <a href={githubLink} target="_blank" rel="noopener noreferrer">
-        <Image src={`${image}`} alt={title} />
+        <Image
+          src={`${image}`}
+          alt={title}
+          fit="contain"
+          h="440px"
+          w="100%"
+          radius="md"
+        />
       </a>
       <strong className="text-[#0035ad]">
         Link to the functional app (replaced with the github link if none
@@ -34,9 +40,7 @@ function Card({ title, link, githubLink, description, image }: Project) {
 }
 
 export function ProjectsDisplay() {
-  const theme = useMantineTheme();
-  const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.md})`);
-  const slides = Object.values(projects).map((items) =>
+  const slides1 = Object.values(projects).map((items) =>
     [items].map((item) => (
       <Carousel.Slide key={item.title}>
         <Card {...item} />
@@ -47,24 +51,22 @@ export function ProjectsDisplay() {
   return (
     <Carousel
       h="100%"
-      slideSize={{ base: "100%", md: "40%", height: "500" }}
-      slideGap={{ base: 2, sm: "xl" }}
+      slideSize={{ base: "100%", md: "50%", height: "500" }}
+      slideGap={{ base: 0, sm: "sm" }}
       align="start"
-      slidesToScroll={mobile ? 1 : 2}
+      slidesToScroll={1}
       withIndicators
       loop
       controlSize={40}
       mt={50}
     >
-      {slides}
+      {slides1}
     </Carousel>
   );
 }
 
 export function BioDisplay() {
-  const theme = useMantineTheme();
-  const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.md})`);
-  const slides = Object.values(bioProjects).map((items) =>
+  const slides2 = Object.values(bioProjects).map((items) =>
     [items].map((item) => (
       <Carousel.Slide key={item.title}>
         <Card {...item} />
@@ -75,15 +77,15 @@ export function BioDisplay() {
   return (
     <Carousel
       h="100%"
-      slideSize={{ base: "100%", md: "40%", height: "500" }}
+      slideSize={{ base: "100%", md: "50%", height: "500" }}
       slideGap={{ base: 2, sm: "xl" }}
       align="start"
-      slidesToScroll={mobile ? 1 : 2}
+      slidesToScroll={1}
       withIndicators
       loop
       controlSize={40}
     >
-      {slides}
+      {slides2}
     </Carousel>
   );
 }
