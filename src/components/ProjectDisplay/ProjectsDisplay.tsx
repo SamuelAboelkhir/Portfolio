@@ -51,13 +51,13 @@ export function ProjectsDisplay() {
   return (
     <Carousel
       h="100%"
-      slideSize={{ base: "100%", md: "50%", height: "500" }}
-      slideGap={{ base: 0, sm: "sm" }}
+      slideSize={{ base: "100%", md: "50%", sm: "40%", xs: "25%" }}
+      slideGap={{ base: 0, sm: "sm", xs: "xs" }}
       align="start"
       slidesToScroll={1}
       withIndicators
       loop
-      controlSize={40}
+      withControls={false}
       mt={50}
     >
       {slides1}
@@ -77,13 +77,13 @@ export function BioDisplay() {
   return (
     <Carousel
       h="100%"
-      slideSize={{ base: "100%", md: "50%", height: "500" }}
-      slideGap={{ base: 2, sm: "xl" }}
+      slideSize={{ base: "100%", md: "50%", sm: "40%", xs: "25%" }}
+      slideGap={{ base: 0, sm: "sm", xs: "xs" }}
       align="start"
       slidesToScroll={1}
       withIndicators
       loop
-      controlSize={40}
+      withControls={false}
     >
       {slides2}
     </Carousel>
