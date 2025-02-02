@@ -60,6 +60,9 @@ export function ProjectsDisplay() {
         loop
         mt={50}
         controlSize={40}
+        classNames={{
+          control: "bg-[#0035ad] text-white"
+        }}
       >
         {slides1}
       </Carousel>
@@ -88,6 +91,9 @@ export function BioDisplay() {
         loop
         mt={50}
         controlSize={40}
+        classNames={{
+          control: "bg-[#0035ad] text-white"
+        }}
       >
         {slides2}
       </Carousel>
