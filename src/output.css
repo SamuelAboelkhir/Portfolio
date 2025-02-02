@@ -554,6 +554,10 @@ video {
   display: none;
 }
 
+.relative {
+  position: relative;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -576,6 +580,14 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-\[800px\] {
+  height: 800px;
+}
+
+.min-h-\[800px\] {
+  min-height: 800px;
 }
 
 .w-1\/2 {

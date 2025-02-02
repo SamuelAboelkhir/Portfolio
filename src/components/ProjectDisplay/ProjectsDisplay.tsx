@@ -49,19 +49,21 @@ export function ProjectsDisplay() {
   );
 
   return (
-    <Carousel
-      h="100%"
-      slideSize={{ base: "100%", md: "50%", sm: "40%", xs: "25%" }}
-      slideGap={{ base: 0, sm: "sm", xs: "xs" }}
-      align="start"
-      slidesToScroll={1}
-      withIndicators
-      loop
-      withControls={false}
-      mt={50}
-    >
-      {slides1}
-    </Carousel>
+    <div className="w-full">
+      <Carousel
+        h="100%"
+        slideSize={{ base: "100%", md: "50%" }}
+        slideGap={{ base: 0, sm: "sm" }}
+        align="start"
+        slidesToScroll={1}
+        withIndicators
+        loop
+        mt={50}
+        controlSize={40}
+      >
+        {slides1}
+      </Carousel>
+    </div>
   );
 }
 
@@ -75,17 +77,20 @@ export function BioDisplay() {
   );
 
   return (
-    <Carousel
-      h="100%"
-      slideSize={{ base: "100%", md: "50%", sm: "40%", xs: "25%" }}
-      slideGap={{ base: 0, sm: "sm", xs: "xs" }}
-      align="start"
-      slidesToScroll={1}
-      withIndicators
-      loop
-      withControls={false}
-    >
-      {slides2}
-    </Carousel>
+    <div className="w-full">
+      <Carousel
+        h="100%"
+        slideSize={{ base: "100%", md: "50%" }}
+        slideGap={{ base: 0, sm: "sm" }}
+        align="start"
+        slidesToScroll={1}
+        withIndicators
+        loop
+        mt={50}
+        controlSize={40}
+      >
+        {slides2}
+      </Carousel>
+    </div>
   );
 }

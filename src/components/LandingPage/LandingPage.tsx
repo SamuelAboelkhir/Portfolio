@@ -104,7 +104,7 @@ export function LandingPage() {
             Web Development Projects
           </Title>
           <ProjectsDisplay />
-          <Divider size="md" c="black" w="50%" p="md" />
+          <Divider size="md" c="black" w="50%" m="lg" />
           <Title className="text-[#0035ad] text-4xl max-lg:text-3xl max-md:text-2xl mb-2">
             Bioinformatics Projects
           </Title>
