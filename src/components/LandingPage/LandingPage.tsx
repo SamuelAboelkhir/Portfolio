@@ -7,6 +7,7 @@ import {
   Center,
   Title,
   Transition,
+  Divider,
 } from "@mantine/core";
 import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -17,7 +18,7 @@ import {
   faMedium,
   faStackOverflow,
 } from "@fortawesome/free-brands-svg-icons";
-import { ProjectsDisplay } from "../ProjectDisplay/ProjectsDisplay";
+import { ProjectsDisplay, BioDisplay } from "../ProjectDisplay/ProjectsDisplay";
 
 const socials = [
   {
@@ -100,9 +101,14 @@ export function LandingPage() {
             TailwindCSS, although I still love Bioinformatics
           </Text>
           <Title className="text-[#0035ad] text-4xl max-lg:text-3xl max-md:text-2xl mt-8 mb-2">
-            Projects
+            Web Development Projects
           </Title>
-          <ProjectsDisplay/>
+          <ProjectsDisplay />
+          <Divider size="md" c="black" w="50%" p="md" />
+          <Title className="text-[#0035ad] text-4xl max-lg:text-3xl max-md:text-2xl mb-2">
+            Bioinformatics Projects
+          </Title>
+          <BioDisplay />
         </Stack>
       </AppShell.Main>
       <Transition

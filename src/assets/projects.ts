@@ -28,7 +28,7 @@ export const projects = {
     githubLink: "https://github.com/BlackDovah/expressBookReviews"
   },
   5: {
-    title: "MedicalManagerApp",
+    title: "Medical Manager App",
     description: "My first attempt at creating an app. This app was created using R-shiny, and Rstudio with the following goal : Create an app that acts as medical hub for patients and medical providers, containing a patient's full medical profile, including full medical history, medical conditions, inherited traits, previous diagnosis, lab analysis results, chronic, previous and current medications, to facilitate healthcare streamline and facilitate healthcare services. The app also had a simple database created using SQL that was meant to hold all users data, and separate accounts into types based on whether you're a patient, physician, or other healthcare provider, as the account type would determine the UI, and functionality the app will load up. However, the app was never finished, due to my complete lack of knowledge on HTML, CSS, and Javascript at the time, which sparked this whole journey of learning, and my eventual switch to web development.",
     image: "/images/MedicalManagerApp.png",
     link: "https://blackdovah.github.io/MedicalManagerApp/",
