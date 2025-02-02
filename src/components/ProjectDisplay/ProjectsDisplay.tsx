@@ -4,14 +4,26 @@ import { useMediaQuery } from "@mantine/hooks";
 import { Project } from "@/types";
 import { projects } from "@/assets/projects";
 
-function Card({ title, link, description, image }: Project) {
+function Card({ title, link, githubLink, description, image }: Project) {
   return (
     <Stack className="items-center justify-center">
       <Title className="text-[#0035ad] text-4xl max-lg:text-3xl max-md:text-2xl mt-8 mb-2">
         {title}
       </Title>
-      <a href={link} target="_blank" rel="noopener noreferrer">
+      <a href={githubLink} target="_blank" rel="noopener noreferrer">
         <Image src={`${image}`} alt={title} />
+      </a>
+      <strong className="text-[#0035ad]">
+        Link to the functional app (replaced with the github link if none
+        available) :
+      </strong>
+      <a
+        className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {link}
       </a>
       <Text className="text-[#0035ad] mb-20 text-lg max-lg:text-base max-md:text-sm">
         {description}
