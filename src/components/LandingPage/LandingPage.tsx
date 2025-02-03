@@ -15,8 +15,8 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
   faLinkedin,
-  faMedium,
-  faStackOverflow,
+  // faMedium,
+  // faStackOverflow,
 } from "@fortawesome/free-brands-svg-icons";
 import { ProjectsDisplay, BioDisplay } from "../ProjectDisplay/ProjectsDisplay";
 
@@ -33,14 +33,14 @@ const socials = [
     icon: faLinkedin,
     url: "https://linkedin.com/in/samuelashraf",
   },
-  {
-    icon: faMedium,
-    url: "https://medium.com",
-  },
-  {
-    icon: faStackOverflow,
-    url: "https://stackoverflow.com",
-  },
+  // {
+  //   icon: faMedium,
+  //   url: "https://medium.com",
+  // },
+  // {
+  //   icon: faStackOverflow,
+  //   url: "https://stackoverflow.com",
+  // },
 ];
 
 export function LandingPage() {
