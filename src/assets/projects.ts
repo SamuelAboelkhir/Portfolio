@@ -8,6 +8,15 @@ export const projects = {
     githubLink: "https://github.com/BlackDovah/MedicalManagerApp",
   },
   2: {
+    title: "E-commerce website",
+    description:
+      "An e-commerce website created using react's mantine componenet library, and node.js + express.js for the backend.",
+    image:
+      "/images/eCommerce.png",
+    link: "https://github.com/BlackDovah/e-commerce",
+    githubLink: "https://github.com/BlackDovah/e-commerce",
+  },
+  3: {
     title: "BookStore Backend",
     description:
       "A backend project created using express.js and node.js. This project that I made during a backend development course taken with IBM on coursera is a book review website where users can create an account and review books. The account information is saved in a users array, and is always referenced if the user tries to login to determin if an account does exist or not, and a token is created for authenticated users that have an account to allow them to access authenticated user only functions that allows them to make or delete reviews. Non-registerd users have access to limited functions, that allows them to browse books, and view their reviews, but without the ability to leave their own reviews.",
@@ -16,14 +25,14 @@ export const projects = {
     link: "https://github.com/BlackDovah/expressBookReviews",
     githubLink: "https://github.com/BlackDovah/expressBookReviews",
   },
-  3: {
+  4: {
     title: "NoThanks boardgame",
     description: "A boardgame created using React and BoardGame.io.",
     image: "/images/BoardGameUI.png",
     link: "https://no-thanks-board-game.vercel.app/",
     githubLink: "https://github.com/BlackDovah/NoThanksBoardGame",
   },
-  4: {
+  5: {
     title: "React simple calculator",
     description:
       "A calculator created using React and tailwindcss as my very first project.",
@@ -31,7 +40,7 @@ export const projects = {
     link: "https://blackdovah.github.io/ReactCalculator/",
     githubLink: "https://github.com/BlackDovah/ReactCalculator",
   },
-  5: {
+  6: {
     title: "BookStore",
     description:
       "My Biggest project yet, with more planned updates to come. A fullstack project featuring a frontend portion created using the mantine component library for react, typsecript, and tailwindcss. The backend portion is created using express.js and node.js.",
