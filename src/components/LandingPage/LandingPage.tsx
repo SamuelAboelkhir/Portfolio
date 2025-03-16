@@ -141,7 +141,7 @@ export function LandingPage() {
           <ProjectsDisplay />
           <Divider size="md" c="black" w="50%" m="lg" />
           <Title className="text-4xl max-lg:text-3xl max-md:text-2xl mb-2">
-            Bioinformatics Projects
+            Data Sciences Projects
           </Title>
           <BioDisplay />
         </Stack>
