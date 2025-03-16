@@ -8,6 +8,9 @@ import {
   Title,
   Transition,
   Divider,
+  Container,
+  SimpleGrid,
+  Box,
 } from "@mantine/core";
 import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -41,6 +44,21 @@ const socials = [
   //   icon: faStackOverflow,
   //   url: "https://stackoverflow.com",
   // },
+];
+
+const skills = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "TypeScript",
+  "React",
+  "Next.js",
+  "TailwindCSS",
+  "Node.js",
+  "Express.js",
+  "Nest.js",
+  "Python",
+  "R",
 ];
 
 export function LandingPage() {
@@ -83,7 +101,7 @@ export function LandingPage() {
         </Group>
       </AppShell.Header>
       <AppShell.Main>
-        <Stack className="flex w-full items-center justify-center">
+        <Stack className="flex text-[#0035ad] w-full items-center justify-center">
           <Image
             src="/images/Photograph.JPG"
             radius="md"
@@ -91,21 +109,38 @@ export function LandingPage() {
             fit="contain"
             className="flex w-[15%] max-lg:w-[20%] max-md:w-[25%] max-sm:w-[30%] mt-8 mb-8"
           />
-          <Title className="text-[#0035ad] text-4xl max-lg:text-3xl max-md:text-2xl mt-8 mb-2">
-            Description:
+          <Title className="text-4xl max-lg:text-3xl max-md:text-2xl mt-8 mb-2">
+            Description
           </Title>
-          <Text className="text-[#0035ad] w-1/2 text-lg max-lg:text-base max-md:text-sm">
+          <Text className="w-1/2 text-lg max-lg:text-base max-md:text-sm">
             I'm a self taught programmer, who has started by delving into python
             and R to learn Data Sciences and Bioinformatics, but have ever since
             shifted towards FullStack development using tools like React and
             TailwindCSS, although I still love Bioinformatics
           </Text>
-          <Title className="text-[#0035ad] text-4xl max-lg:text-3xl max-md:text-2xl mt-8 mb-2">
+          <Title className="text-4xl max-lg:text-3xl max-md:text-2xl mt-8 mb-2">
+            Skills
+          </Title>
+          <Container>
+            <SimpleGrid cols={{ base: 2, sm: 4 }}>
+              {skills.map((skill) => (
+                <Box
+                  key={skill}
+                  className="flex justify-center border-4 rounded-xl 
+                  border-blue-500 text-lg max-lg:text-base max-md:text-sm p-2"
+                >
+                  {skill}
+                </Box>
+              ))}
+            </SimpleGrid>
+          </Container>
+
+          <Title className="text-4xl max-lg:text-3xl max-md:text-2xl mt-8 mb-2">
             Web Development Projects
           </Title>
           <ProjectsDisplay />
           <Divider size="md" c="black" w="50%" m="lg" />
-          <Title className="text-[#0035ad] text-4xl max-lg:text-3xl max-md:text-2xl mb-2">
+          <Title className="text-4xl max-lg:text-3xl max-md:text-2xl mb-2">
             Bioinformatics Projects
           </Title>
           <BioDisplay />
