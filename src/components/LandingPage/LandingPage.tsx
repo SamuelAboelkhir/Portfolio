@@ -131,7 +131,7 @@ export function LandingPage() {
                 >
                   {skill}
                 </Box>
-              ))}
+              )) }
             </SimpleGrid>
           </Container>
 
